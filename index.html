@@ -13,7 +13,51 @@
 <script src="jquery.justifiedGallery.min.js"></script>
 </head>
 <body>
-    <?php include_once ("menu.php"); ?>
+
+<div class="mobile-nav-overlay">
+	<span class="mobile-nav-close"><img src="https://brandonsmithphoto.s3.us-west-1.amazonaws.com/close.svg"/></span>
+	<nav class="mobile-nav-content">
+		<a href="index.html">Images</a>
+		<div class="mobile-nav-section">
+			<span class="mobile-nav-label">Photo collections</span>
+			<a href="#">CAMFED graduates in Zimbabwe</a>
+			<a href="#">Novica artisans in Ghana</a>
+			<a href="#">Clean water in Cambodia</a>
+			<a href="#">Coffee production in Kenya</a>
+			<a href="#">Rice farming in Rwanda</a>
+			<a href="#">Clean cookstoves in Ghana</a>
+			<a href="#">Students in Cambodia</a>
+		</div>
+		<a href="contact.html">Contact</a>
+	</nav>
+</div>
+
+<div class="main-container">
+<div class="content-container">
+<div class="portfolio-header">
+<h1 class="portfolio-title">Brandon Smith 
+
+
+<div class="nav-links">
+<a class="contact-link" href="index.html">Images</a>
+<span class="dropdown">
+<a class="contact-link" href="#">Photo collections</a>
+<div class="dropdown-content">
+			<a href="#">CAMFED graduates in Zimbabwe</a>
+			<a href="#">Novica artisans in Ghana</a>
+			<a href="#">Clean water in Cambodia</a>
+			<a href="#">Coffee production in Kenya</a>
+			<a href="#">Rice farming in Rwanda</a>
+			<a href="#">Clean cookstoves in Ghana</a>
+			<a href="#">Students in Cambodia</a>
+</div>
+</span>
+<a class="contact-link" href="contact.html">Contact</a>
+</div>
+<button class="hamburger">☰</button>
+</h1>
+</div>
+
 <div class="gallery justified-gallery">
 <a href="https://brandonsmithphoto.s3.us-west-1.amazonaws.com/brandonsmithphoto/001-cynthia-2000px.jpg"><img src="https://brandonsmithphoto.s3.us-west-1.amazonaws.com/brandonsmithphoto/001-cynthia-2000px.jpg"></a>
 <a href="https://brandonsmithphoto.s3.us-west-1.amazonaws.com/brandonsmithphoto/006-fadi-2000px.jpg"><img src="https://brandonsmithphoto.s3.us-west-1.amazonaws.com/brandonsmithphoto/006-fadi-2000px.jpg"></a>
@@ -55,6 +99,13 @@
 <img alt="Full image view" id="modalImg" src=""/>
 </div>
 <script>
+
+  fetch('menu.html')
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById('menu').innerHTML = data;
+    });
+
 document.addEventListener("DOMContentLoaded", function () {
   const breakpoints = [1080, 1440, 2000];
 

@@ -34,6 +34,17 @@ body {
 	text-decoration: none;
 	}
 	
+.collection {
+	width:100%;
+}
+
+.collection img {
+	max-width: 980px;
+	margin-bottom: 80px;
+	max-height: 750px;
+	display:block;
+}
+	
 /* MODAL WINDOW */
 	
 .image-modal {
