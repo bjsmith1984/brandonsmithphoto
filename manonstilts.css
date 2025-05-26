@@ -304,7 +304,7 @@ body {
 @media (max-width: 425px) {
 	.gallery {margin: 0px;}
 	.content-container { width: 100%}
-	.portfolio-header { padding: 0 10px}
+	.portfolio-header { padding: 0 5px}
 	.portfolio-title { font-size: 28px; padding: 0px;}
 	.contact-container { padding: 0 15px}
 	.mobile-nav-close { right: 5px}
