@@ -302,7 +302,8 @@ body {
   }
 }
 @media (max-width: 425px) {
-	.content-container { width: 100vw}
+	.gallery {margin: 0px;}
+	.content-container { width: 100%}
 	.portfolio-header { padding: 0 10px}
 	.portfolio-title { font-size: 28px; padding: 0px;}
 	.contact-container { padding: 0 15px}
