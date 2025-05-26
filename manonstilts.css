@@ -34,12 +34,11 @@ body {
 	text-decoration: none;
 	}
 	
-.collection {
-	width:100%;
-}
+.collection {}
 
 .collection img {
-	max-width: 980px;
+	max-width:100%;
+	height: auto;
 	margin-bottom: 80px;
 	max-height: 750px;
 	display:block;
@@ -293,5 +292,7 @@ body {
 	.portfolio-title { font-size: 28px; padding: 0px;}
 	.contact-container { padding: 0 5px}
 	.mobile-nav-close { right: 5px}
-	.hamburger {position:absolute; right: 5px; padding: 0;}
+	.hamburger { position:absolute; right: 5px; padding: 0;}
+	.collection img { margin-bottom: 30px; }
+	
 	}
