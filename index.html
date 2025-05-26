@@ -1,30 +1,56 @@
 <!-- v0.0.1 -->
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Brandon Smith Photography</title>
-  
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
-  <link rel="stylesheet" href="justifiedGallery.min.css">
-  <link rel="stylesheet" href="manonstilts.css">
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script src="jquery.justifiedGallery.min.js"></script>
-
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Brandon Smith Photography</title>
+<link href="https://fonts.googleapis.com/css?family=Sofia" rel="stylesheet"/>
+<link href="justifiedGallery.min.css" rel="stylesheet"/>
+<link href="manonstilts.css" rel="stylesheet"/>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="jquery.justifiedGallery.min.js"></script>
 </head>
-
-
 <body>
+<div class="mobile-nav-overlay">
+<span class="mobile-nav-close"><img src="https://brandonsmithphoto.s3.us-west-1.amazonaws.com/close.svg"/></span>
+<nav class="mobile-nav-content">
+<a href="index.html">Images</a>
+<div class="mobile-nav-section">
+<span class="mobile-nav-label">Photo collections</span>
+<a href="#">CAMFED graduates in Zimbabwe</a>
+<a href="#">Novica artisans in Ghana</a>
+<a href="#">Clean water in Cambodia</a>
+<a href="#">Coffee production in Kenya</a>
+</div>
+<a href="contact.html">Contact</a>
+</nav>
+</div>
+
 <div class="main-container">
-	<div class="content-container">
-		<div class="portfolio-header">
-      		<h1 class="portfolio-title">Brandon Smith <a href="index.html" class="contact-link">Images</a> <a href="contact.html" class="contact-link">Contact</a> 		
-      		</h1>
-    	</div>
-	
-	
-  		<div class="gallery justified-gallery">
+<div class="content-container">
+<div class="portfolio-header">
+<h1 class="portfolio-title">Brandon Smith 
+
+
+<div class="nav-links">
+<a class="contact-link" href="index.html">Images</a>
+<span class="dropdown">
+<a class="contact-link" href="#">Photo collections</a>
+<div class="dropdown-content">
+<a href="#">CAMFED graduates in Zimbabwe</a>
+<a href="#">Novica artisans in Ghana</a>
+<a href="#">Clean water in Cambodia</a>
+<a href="#">Coffee production in Kenya</a>
+</div>
+</span>
+<a class="contact-link" href="contact.html">Contact</a>
+</div>
+<button class="hamburger">☰</button>
+</h1>
+</div>
+<div class="gallery justified-gallery">
 <a href="https://brandonsmithphoto.s3.us-west-1.amazonaws.com/brandonsmithphoto/001-cynthia-2000px.jpg"><img src="https://brandonsmithphoto.s3.us-west-1.amazonaws.com/brandonsmithphoto/001-cynthia-2000px.jpg"></a>
 <a href="https://brandonsmithphoto.s3.us-west-1.amazonaws.com/brandonsmithphoto/006-fadi-2000px.jpg"><img src="https://brandonsmithphoto.s3.us-west-1.amazonaws.com/brandonsmithphoto/006-fadi-2000px.jpg"></a>
 <a href="https://brandonsmithphoto.s3.us-west-1.amazonaws.com/brandonsmithphoto/022-scott-2000px.jpg"><img src="https://brandonsmithphoto.s3.us-west-1.amazonaws.com/brandonsmithphoto/022-scott-2000px.jpg"></a>
@@ -58,14 +84,13 @@
 <a href="https://brandonsmithphoto.s3.us-west-1.amazonaws.com/brandonsmithphoto/031-punit-2000px.jpg"><img src="https://brandonsmithphoto.s3.us-west-1.amazonaws.com/brandonsmithphoto/031-punit-2000px.jpg"></a>
 <a href="https://brandonsmithphoto.s3.us-west-1.amazonaws.com/brandonsmithphoto/032-kenya02-2000px.jpg"><img src="https://brandonsmithphoto.s3.us-west-1.amazonaws.com/brandonsmithphoto/032-kenya02-2000px.jpg"></a>
     	</div>
-    </div>
+</div>
 </div>
 <div class="image-modal" id="imageModal">
-  <span class="modal-close" id="modalClose"><img src="https://brandonsmithphoto.s3.us-west-1.amazonaws.com/close.svg"></span>
-  <img id="modalImg" src="" alt="Full image view">
+<span class="modal-close" id="modalClose"><img src="https://brandonsmithphoto.s3.us-west-1.amazonaws.com/close.svg"/></span>
+<img alt="Full image view" id="modalImg" src=""/>
 </div>
-
-  <script>
+<script>
 document.addEventListener("DOMContentLoaded", function () {
   const breakpoints = [1080, 1440, 2000];
 
@@ -108,7 +133,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   </script>
-  <script>
+<script>
 document.addEventListener("DOMContentLoaded", function () {
   const modal = document.getElementById("imageModal");
   const modalImg = document.getElementById("modalImg");
@@ -136,5 +161,19 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 </script>
-</body>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const hamburger = document.querySelector(".hamburger");
+  const modalMenu = document.querySelector(".mobile-nav-overlay");
+  const closeBtn = document.querySelector(".mobile-nav-close");
+
+  hamburger.addEventListener("click", function () {
+    modalMenu.classList.add("open");
+  });
+
+  closeBtn.addEventListener("click", function () {
+    modalMenu.classList.remove("open");
+  });
+});
+</script></body>
 </html>
