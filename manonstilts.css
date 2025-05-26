@@ -302,11 +302,14 @@ body {
   }
 }
 @media (max-width: 425px) {
+	.gallery {margin: 0 5px;}
 	.content-container { width: 100vw}
-	.portfolio-header { padding: 0 5px}
+	.portfolio-header { padding: 0 10px}
 	.portfolio-title { font-size: 28px; padding: 0px;}
-	.contact-container { padding: 0 5px}
+	.contact-container { padding: 0 15px}
 	.mobile-nav-close { right: 5px}
 	.hamburger { position:absolute; right: 5px; padding: 0;}
 	.collection img { margin-bottom: 30px; }
+	.collection-container {margin: 0 10px}
+	.collection-description { margin: 38px 0 38px 0;}
 	}
