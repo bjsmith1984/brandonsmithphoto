@@ -43,6 +43,7 @@ body {
 	height: auto;
 	margin-bottom: 80px;
 	display:block;
+	padding: 0 5px;
 }
 	
 /* MODAL WINDOW */
@@ -295,5 +296,4 @@ body {
 	.mobile-nav-close { right: 5px}
 	.hamburger { position:absolute; right: 5px; padding: 0;}
 	.collection img { margin-bottom: 30px; }
-	
 	}
