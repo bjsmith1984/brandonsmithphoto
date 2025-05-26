@@ -45,6 +45,19 @@ body {
 	display:block;
 	padding: 0 5px;
 }
+
+.collection-description {
+	margin: 38px 0px 38px 5px;
+	line-height: 1.4rem;
+	max-width:720px;
+	color: #434343;
+}
+
+.lede {
+	font-weight:550;
+	font-size:20px;
+	line-height:1.5rem;
+}
 	
 /* MODAL WINDOW */
 	
