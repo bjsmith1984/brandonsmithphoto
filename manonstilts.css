@@ -34,13 +34,14 @@ body {
 	text-decoration: none;
 	}
 	
-.collection {}
+.collection-container {
+	max-width:920px;
+}
 
 .collection img {
 	max-width:100%;
 	height: auto;
 	margin-bottom: 80px;
-	max-height: 750px;
 	display:block;
 }
 	
