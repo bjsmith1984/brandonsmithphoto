@@ -72,5 +72,20 @@
 </div>
 </div>
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const hamburger = document.querySelector(".hamburger");
+  const modalMenu = document.querySelector(".mobile-nav-overlay");
+  const closeBtn = document.querySelector(".mobile-nav-close");
+
+  hamburger.addEventListener("click", function () {
+    modalMenu.classList.add("open");
+  });
+
+  closeBtn.addEventListener("click", function () {
+    modalMenu.classList.remove("open");
+  });
+});
+</script>
 </body>
 </html>
