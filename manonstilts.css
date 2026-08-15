@@ -21,6 +21,11 @@ body {
 	padding: 0;
 }
 
+.title-link {
+	color: inherit;
+	text-decoration: none;
+}
+
 .gallery {
       margin: 16px auto;
       padding: 0;
